@@ -50,31 +50,57 @@ class Program
         // string greeting = age >= 18 ? "Welcome!" : "No minors allowed!";
 
 
-        // Övning - Program meny
-        Console.WriteLine("Choose an option from the menu:");
-        Console.WriteLine("1. Say Hello");
-        Console.WriteLine("2. Display today's date");
-        Console.WriteLine("3. Exit");
+        // // Övning - Program meny
+        // Console.WriteLine("Choose an option from the menu:");
+        // Console.WriteLine("1. Say Hello");
+        // Console.WriteLine("2. Display today's date");
+        // Console.WriteLine("3. Exit");
 
-        string input = Console.ReadLine();
+        // string input = Console.ReadLine();
 
-        int choice = int.Parse(input);
+        // int choice = int.Parse(input);
 
-        if (choice == 1)
+        // if (choice == 1)
+        // {
+        //     Console.WriteLine("Hello!");
+        // }
+        // else if (choice == 2)
+        // {
+        //     Console.WriteLine($"Today's date is: {DateTime.Now.ToShortDateString()}");
+        // }
+        // else if (choice == 3)
+        // {
+        //     Console.WriteLine("Goodbye!");
+        // }
+        // else
+        // {
+        //     Console.WriteLine("Invalid choice, please try again.");
+        // }
+
+
+        // Create a C# program that requests three names of people from the user -check
+        //
+        // and stores them in an array of objects of type Person. - check
+        //
+        // To do this, first create a Person class that has a Name property of type string - check
+        //
+        // and override the ToString() method. - check
+        //
+        // End the program by reading persons and executing the ToString() method on the screen.
+
+        Console.WriteLine("Insert name: ");
+        string firstName = Console.ReadLine();
+
+        string secondtName = Console.ReadLine();
+
+        string thirdName = Console.ReadLine();
+
+        Person[] persons = { new Person(firstName), new Person(secondtName), new Person(thirdName) };
+
+        foreach (Person person in persons)
         {
-            Console.WriteLine("Hello!");
-        }
-        else if (choice == 2)
-        {
-            Console.WriteLine($"Today's date is: {DateTime.Now.ToShortDateString()}");
-        }
-        else if (choice == 3)
-        {
-            Console.WriteLine("Goodbye!");
-        }
-        else
-        {
-            Console.WriteLine("Invalid choice, please try again.");
+            Console.WriteLine(person.ToString());
         }
     }
+
 }
