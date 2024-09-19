@@ -77,13 +77,14 @@ class Program
         //     Console.WriteLine("Invalid choice, please try again.");
         // }
 
-        // Om man ska skapa upp ett objekt(instans) så behöver man ta bort static på metoden så att ctor kan komma åt datan på objektet(instansen)
+
+
+        // // Om man ska skapa upp ett objekt(instans) så behöver man ta bort static på metoden så att ctor kan komma åt datan på objektet(instansen)
         var personsDisplayer = new PersonsDisplayer();
         personsDisplayer.DisplayPersons();
 
-        // Här kommer man åt datan genom static på metoden
+        // // Här kommer man åt datan genom static på metoden
         // PersonsDisplayer.DisplayPersons();
 
     }
 }
-
