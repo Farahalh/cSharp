@@ -77,30 +77,13 @@ class Program
         //     Console.WriteLine("Invalid choice, please try again.");
         // }
 
+        // Om man ska skapa upp ett objekt(instans) så behöver man ta bort static på metoden så att ctor kan komma åt datan på objektet(instansen)
+        var personsDisplayer = new PersonsDisplayer();
+        personsDisplayer.DisplayPersons();
 
-        // Create a C# program that requests three names of people from the user -check
-        //
-        // and stores them in an array of objects of type Person. - check
-        //
-        // To do this, first create a Person class that has a Name property of type string - check
-        //
-        // and override the ToString() method. - check
-        //
-        // End the program by reading persons and executing the ToString() method on the screen.
+        // Här kommer man åt datan genom static på metoden
+        // PersonsDisplayer.DisplayPersons();
 
-        Console.WriteLine("Insert name: ");
-        string firstName = Console.ReadLine();
-
-        string secondtName = Console.ReadLine();
-
-        string thirdName = Console.ReadLine();
-
-        Person[] persons = { new Person(firstName), new Person(secondtName), new Person(thirdName) };
-
-        foreach (Person person in persons)
-        {
-            Console.WriteLine(person.ToString());
-        }
     }
-
 }
+
