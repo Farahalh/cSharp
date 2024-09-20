@@ -4,10 +4,14 @@ namespace cSharp
     {
         // skriv ut talen 1 - 10 på 3 olika sätt.
         int i = 0;
+        public Loops()
+        {
+
+        }
         public void methodWhile()
         {
             // while
-            while (i < 11)
+            while (i < 10)
             {
                 Console.WriteLine(i);
                 i++;
@@ -33,12 +37,11 @@ namespace cSharp
 
         public void methodFor()
         {
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, };
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.WriteLine(i);
             }
         }
-
     }
 }

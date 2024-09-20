@@ -86,5 +86,10 @@ class Program
         // // Här kommer man åt datan genom static på metoden
         // PersonsDisplayer.DisplayPersons();
 
+        var loopsDisplayer = new Loops();
+        loopsDisplayer.methodWhile();
+        loopsDisplayer.methodDo();
+        loopsDisplayer.methodFor();
+
     }
 }
