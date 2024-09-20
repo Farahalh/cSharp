@@ -3,18 +3,17 @@ namespace cSharp
     class Loops
     {
         // skriv ut talen 1 - 10 på 3 olika sätt.
-        int i = 0;
+        private int _i = 0; //renamed to _i
         public Loops()
         {
-
         }
         public void methodWhile()
         {
             // while
-            while (i < 10)
+            while (_i < 10)
             {
-                Console.WriteLine(i);
-                i++;
+                Console.WriteLine(_i);
+                _i++;
             }
         }
 
@@ -23,10 +22,10 @@ namespace cSharp
             // do
             do
             {
-                Console.WriteLine(i);
-                i++;
+                Console.WriteLine(_i);
+                _i++;
             }
-            while (i < 11);
+            while (_i < 11);
 
             // for
             for (int i = 0; i < 11; i++)
