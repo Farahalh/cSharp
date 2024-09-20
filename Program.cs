@@ -49,34 +49,8 @@ class Program
         // int age = 20;
         // string greeting = age >= 18 ? "Welcome!" : "No minors allowed!";
 
-
-        // // Övning - Program meny
-        // Console.WriteLine("Choose an option from the menu:");
-        // Console.WriteLine("1. Say Hello");
-        // Console.WriteLine("2. Display today's date");
-        // Console.WriteLine("3. Exit");
-
-        // string input = Console.ReadLine();
-
-        // int choice = int.Parse(input);
-
-        // if (choice == 1)
-        // {
-        //     Console.WriteLine("Hello!");
-        // }
-        // else if (choice == 2)
-        // {
-        //     Console.WriteLine($"Today's date is: {DateTime.Now.ToShortDateString()}");
-        // }
-        // else if (choice == 3)
-        // {
-        //     Console.WriteLine("Goodbye!");
-        // }
-        // else
-        // {
-        //     Console.WriteLine("Invalid choice, please try again.");
-        // }
-
+        var displaysMenu = new Menu();
+        displaysMenu.DisplaysMenu();
 
 
         // // Om man ska skapa upp ett objekt(instans) så behöver man ta bort static på metoden så att ctor kan komma åt datan på objektet(instansen)
