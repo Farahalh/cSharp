@@ -2,9 +2,10 @@ namespace cSharp
 {
 public class PersonsDisplayer
 {
-    public PersonsDisplayer()
+    private IUI _ui;
+    public PersonsDisplayer(IUI ui)
     {
-
+        _ui = ui;
     }
     public void DisplayPersons()
     {
@@ -19,17 +20,17 @@ public class PersonsDisplayer
         // End the program by reading persons and executing the ToString() method on the screen.
 
         Console.WriteLine("Insert name: ");
-        string firstName = Console.ReadLine();
+        string firstName = _ui.ReadLine();
 
-        string secondtName = Console.ReadLine();
+        string secondtName = _ui.ReadLine();
 
-        string thirdName = Console.ReadLine();
+        string thirdName = _ui.ReadLine();
 
         Person[] persons = { new Person(firstName), new Person(secondtName), new Person(thirdName) };
 
         foreach (Person person in persons)
         {
-            Console.WriteLine(person.ToString());
+            _ui.WriteLine(person.ToString());
         }
     }
 }

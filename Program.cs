@@ -54,7 +54,7 @@ class Program
 
 
         // // Om man ska skapa upp ett objekt(instans) så behöver man ta bort static på metoden så att ctor kan komma åt datan på objektet(instansen)
-        var personsDisplayer = new PersonsDisplayer();
+        var personsDisplayer = new PersonsDisplayer(new ConsoleIO());
         personsDisplayer.DisplayPersons();
 
         // // Här kommer man åt datan genom static på metoden
