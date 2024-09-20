@@ -20,6 +20,8 @@ class Menu
 
         int choice = int.Parse(input);
 
+
+        //How about a switch?
         if (choice == 1)
         {
             Console.WriteLine("Hello!");
