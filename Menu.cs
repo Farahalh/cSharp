@@ -16,9 +16,9 @@ class Menu
         Console.WriteLine("2. Display today's date");
         Console.WriteLine("3. Exit");
 
-        string input = Console.ReadLine();
+        string? input = Console.ReadLine();
 
-        int choice = int.Parse(input);
+        int choice = int.Parse(input ?? string.Empty);  
 
 
         //How about a switch?
