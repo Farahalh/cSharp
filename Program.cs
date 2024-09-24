@@ -79,8 +79,8 @@ class Program
         // int age = 20;
         // string greeting = age >= 18 ? "Welcome!" : "No minors allowed!";
 
-        //var displaysMenu = new Menu();
-        //displaysMenu.DisplaysMenu();
+        var displaysMenu = new Menu();
+        displaysMenu.DisplaysMenu();
 
 
         //// // Om man ska skapa upp ett objekt(instans) så behöver man ta bort static på metoden så att ctor kan komma åt datan på objektet(instansen)
