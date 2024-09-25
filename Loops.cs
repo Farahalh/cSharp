@@ -42,5 +42,20 @@ namespace cSharp
                 Console.WriteLine(i);
             }
         }
+
+
+
+        // int[] numbersToGuess = {0,1,2,3,4,5,6,7,8,9,10};
+        // int choosenNumber = Convert.ToInt32(Console.ReadLine());
+
+        // public void guessNumber()
+        // {
+        // Console.WriteLine("Guess a number between 1 and 10");
+
+        // if (choosenNumber == numbersToGuess)
+        // {
+            
+        // }
+        // }
     }
 }
