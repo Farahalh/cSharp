@@ -2,35 +2,35 @@
 
 class Program
 {
-    static void PrintMessage(string s)
-    {
-        Console.WriteLine(s.Length);
-    }
+    //static void PrintMessage(string s)
+    //{
+    //    Console.WriteLine(s.Length);
+    //}
 
-    static void DivisionOfTwoNumbers()
-    {
-        int dividend = 10;
-        int divisor = 0;
+    //static void DivisionOfTwoNumbers()
+    //{
+    //    int dividend = 10;
+    //    int divisor = 0;
 
-        Console.WriteLine(dividend / divisor);
-    }
+    //    Console.WriteLine(dividend / divisor);
+    //}
 
-    static void DivisionOfUserInput()
-    {
-        int divisorInput;
-        int dividendInput;
+    //static void DivisionOfUserInput()
+    //{
+    //    int divisorInput;
+    //    int dividendInput;
 
-        Console.WriteLine("Input value one: ");
-        divisorInput = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("Input value one: ");
+    //    divisorInput = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Input value two: ");
-        dividendInput = Convert.ToInt32(Console.ReadLine());
+    //    Console.WriteLine("Input value two: ");
+    //    dividendInput = Convert.ToInt32(Console.ReadLine());
 
-        int result = dividendInput / divisorInput;
+    //    int result = dividendInput / divisorInput;
 
-        Console.WriteLine("Result: ");
-        Console.WriteLine($"{dividendInput} / {divisorInput} = {result}");
-    }
+    //    Console.WriteLine("Result: ");
+    //    Console.WriteLine($"{dividendInput} / {divisorInput} = {result}");
+    //}
 
     static void Main(string[] args)
     {
@@ -79,8 +79,8 @@ class Program
         // int age = 20;
         // string greeting = age >= 18 ? "Welcome!" : "No minors allowed!";
 
-        var displaysMenu = new Menu();
-        displaysMenu.DisplaysMenu();
+        //var displaysMenu = new Menu();
+        //displaysMenu.DisplaysMenu();
 
 
         //// // Om man ska skapa upp ett objekt(instans) så behöver man ta bort static på metoden så att ctor kan komma åt datan på objektet(instansen)
@@ -95,26 +95,30 @@ class Program
         //loopsDisplayer.methodDo();
         //loopsDisplayer.methodFor();
 
+        var listsDisplayer = new Lists();
+        listsDisplayer.viewList();
 
-        string? s = (args.Length > 0) ? args[0] : null;
-        PrintMessage(s ?? string.Empty);
 
-        try
-        {
-            DivisionOfTwoNumbers();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.StackTrace);
-        }
+        //    string? s = (args.Length > 0) ? args[0] : null;
+        //    PrintMessage(s ?? string.Empty);
 
-        try
-        {
-            DivisionOfUserInput();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
+        //    try
+        //    {
+        //        DivisionOfTwoNumbers();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.StackTrace);
+        //    }
+
+        //    try
+        //    {
+        //        DivisionOfUserInput();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+
     }
 }
