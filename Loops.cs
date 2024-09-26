@@ -3,7 +3,7 @@ namespace cSharp
     class Loops
     {
         // skriv ut talen 1 - 10 på 3 olika sätt.
-        private int _i = 0; //renamed to _i
+        private int _i = 0; //renamed to _i bcs it is a field
         public Loops()
         {
         }
