@@ -1,5 +1,4 @@
 ﻿namespace cSharp;
-
 class Program
 {
     //static void PrintMessage(string s)
@@ -95,9 +94,12 @@ class Program
         //loopsDisplayer.methodDo();
         //loopsDisplayer.methodFor();
 
-        var listsDisplayer = new Lists();
-        listsDisplayer.viewList();
+        //var listsDisplayer = new Lists();
+        //listsDisplayer.viewList();
 
+
+        var queueDisplayer = new MyQueue();
+        queueDisplayer.modifyQueue();
 
         //    string? s = (args.Length > 0) ? args[0] : null;
         //    PrintMessage(s ?? string.Empty);

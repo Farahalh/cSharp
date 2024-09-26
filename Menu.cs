@@ -14,7 +14,7 @@ class Menu
         return new string[4] {
                 "1. Say Hello",
                 "2. Display today's date",
-                    "3. Input Your Age",
+                "3. Input Your Age",
                 "4. Exit"
         };
     }
