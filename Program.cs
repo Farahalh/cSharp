@@ -98,8 +98,11 @@ class Program
         //listsDisplayer.viewList();
 
 
-        var queueDisplayer = new MyQueue();
-        queueDisplayer.modifyQueue();
+        //var queueDisplayer = new MyQueue();
+        //queueDisplayer.modifyQueue();
+
+        var stackDisplayer = new MyStack();
+        stackDisplayer.modifyStack();
 
         //    string? s = (args.Length > 0) ? args[0] : null;
         //    PrintMessage(s ?? string.Empty);
