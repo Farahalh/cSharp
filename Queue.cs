@@ -1,6 +1,6 @@
 ﻿namespace cSharp;
 
-class Queue
+class MyQueue
 {
 
     // Create a Queue that stores strings
@@ -9,42 +9,42 @@ class Queue
     // Add two more strings and repeate remove until the queue is empty
     // Use the methods Enqueu and Dequeue
 
-    Queue<string> queue = new Queue<string>();
+    private Queue<string> _queue;
 
-    public Queue()
+    public MyQueue()
     {
-
+        _queue = new Queue<string>();
     }
 
     public void modifyQueue()
     {
         Console.WriteLine("Original Queue: ");
 
-        queue.Enqueue("Spoon");
-        queue.Enqueue("Fork");
-        queue.Enqueue("Knife");
+        _queue.Enqueue("Spoon");
+        _queue.Enqueue("Fork");
+        _queue.Enqueue("Knife");
 
-        foreach (var item in queue)
+        foreach (var item in _queue)
         {
             Console.WriteLine(item);
         }
 
-        //queue.Dequeue();
+        Console.WriteLine(_queue.Dequeue());
 
         Console.WriteLine("\nDequeued Queue: ");
 
-        while (queue.Count > 0)
+        while (_queue.Count > 0)
         {
-            var dequeueItem = queue.Dequeue();
+            var dequeueItem = _queue.Dequeue();
             Console.WriteLine(dequeueItem);
         }
 
         Console.WriteLine("\nUpdated Queue: ");
 
-        queue.Enqueue("Plate");
-        queue.Enqueue("Cup");
+        _queue.Enqueue("Plate");
+        _queue.Enqueue("Cup");
 
-        foreach (var item in queue)
+        foreach (var item in _queue)
         {
             Console.WriteLine(item);
         }
